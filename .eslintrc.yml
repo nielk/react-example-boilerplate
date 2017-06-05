@@ -1,0 +1,59 @@
+root: true
+
+parser: babel-eslint
+
+plugins:
+  - react
+  - flowtype
+
+extends:
+  - eslint:recommended
+  - plugin:react/recommended
+  - plugin:flowtype/recommended
+  - airbnb
+
+env:
+  browser: true
+  es6: true
+  jest: true
+
+ecmaFeatures:
+  jsx: true
+  modules: true
+
+globals:
+  env: true
+  __DEV__: true
+  __PROD__: true
+  __TARGET__: true
+
+settings:
+  flowtype:
+    onlyFilesWithFlowAnnotation: true
+  import/resolver:
+    webpack:
+      config: './webpack/development.config.js'
+    node:
+      extensions:
+        - .js
+        - .flow
+      moduleDirectory:
+        - node_modules
+        - src
+
+rules:
+  comma-dangle: [2, "never"]
+  flowtype/define-flow-type: 1
+  flowtype/use-flow-type: 1
+  global-require: 1
+  import/no-extraneous-dependencies: [2, {"devDependencies": ["**/*.test.js", "**/*.spec.js", "translator.js"], "optionalDependencies": false, "peerDependencies": false}]
+  import/prefer-default-export: 0
+  jsx-a11y/no-static-element-interactions: 0
+  max-len: 0
+  no-shadow: 0
+  no-underscore-dangle: 1
+  class-methods-use-this: 1
+  react/forbid-prop-types: 1
+  react/jsx-filename-extension: [1, { "extensions": [".js", ".jsx"] }]
+  react/no-unused-prop-types: 0
+  semi: [2, "never"]

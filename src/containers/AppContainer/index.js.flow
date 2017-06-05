@@ -1,0 +1,10 @@
+// @flow
+
+import type { Record } from 'lib/records'
+import type { List, Map } from 'immutable'
+
+export type AppContainerStateShape = {
+  status: Map<string, *>
+}
+
+export type AppContainerStateRecord = Record<AppContainerStateShape>

@@ -1,0 +1,27 @@
+.header {
+  @extend .border-col-03;
+  position: relative;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  margin-bottom: 30px;
+}
+
+.header-h1 {
+  @extend .text-xl;
+  @extend .col-02;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 0;
+  line-height: 37px;
+}
+
+.header-right {
+  padding-top: 21px;
+  padding-bottom: 20px;
+  margin-top: 0;
+  line-height: 37px;
+}
+
+.header-right > * + * {
+  margin-left: 18px;
+}

@@ -1,0 +1,13 @@
+// @flow
+
+import type { Map } from 'immutable'
+import type { Record } from 'lib/records'
+
+export type IntlStateShape = {
+  languageCode: string,
+  messages: Map<string, string>,
+  status: Map<string, *>
+}
+
+export type IntlStateRecord = Record<IntlStateShape>
+

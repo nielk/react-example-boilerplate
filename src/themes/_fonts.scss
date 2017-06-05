@@ -1,0 +1,82 @@
+/**
+ * primary font: Geomanist
+ */
+
+$primary-font-name: 'geomanist';
+$primary-font: $primary-font-name, arial, sans-serif;
+
+// thin
+@font-face {
+  font-family: $primary-font-name;
+  src: url('./../fonts/geomanist/geomanist-thin-webfont.woff2') format('woff2'),
+       url('./../fonts/geomanist/geomanist-thin-webfont.woff') format('woff'),
+       url('./../fonts/geomanist/geomanist-thin-webfont.ttf') format('truetype');
+  font-weight: 100;
+}
+
+// light
+@font-face {
+  font-family: $primary-font-name;
+  src: url('./../fonts/geomanist/geomanist-light-webfont.woff2') format('woff2'),
+       url('./../fonts/geomanist/geomanist-light-webfont.woff') format('woff'),
+       url('./../fonts/geomanist/geomanist-light-webfont.ttf') format('truetype');
+  font-weight: 200;
+}
+
+// regular
+@font-face {
+  font-family: $primary-font-name;
+  src: url('./../fonts/geomanist/geomanist-regular-webfont.woff2') format('woff2'),
+       url('./../fonts/geomanist/geomanist-regular-webfont.woff') format('woff'),
+       url('./../fonts/geomanist/geomanist-regular-webfont.ttf') format('truetype');
+  font-weight: 300;
+}
+
+// book
+@font-face {
+  font-family: $primary-font-name;
+  src: url('./../fonts/geomanist/geomanist-book-webfont.woff2') format('woff2'),
+       url('./../fonts/geomanist/geomanist-book-webfont.woff') format('woff'),
+       url('./../fonts/geomanist/geomanist-book-webfont.ttf') format('truetype');
+  font-weight: 400;
+}
+
+// medium
+@font-face {
+  font-family: $primary-font-name;
+  src: url('./../fonts/geomanist/geomanist-medium-webfont.woff2') format('woff2'),
+       url('./../fonts/geomanist/geomanist-medium-webfont.woff') format('woff'),
+       url('./../fonts/geomanist/geomanist-medium-webfont.ttf') format('truetype');
+  font-weight: 500;
+}
+
+// bold
+@font-face {
+  font-family: $primary-font-name;
+  src: url('./../fonts/geomanist/geomanist-bold-webfont.woff2') format('woff2'),
+       url('./../fonts/geomanist/geomanist-bold-webfont.woff') format('woff'),
+       url('./../fonts/geomanist/geomanist-bold-webfont.ttf') format('truetype');
+  font-weight: 600;
+}
+
+/**
+ * font size
+ */
+
+$dn-font-size-xs: 10px;
+$dn-font-size-sm: 13px;
+$dn-font-size-default: 15px;
+$dn-font-size-md: 18px;
+$dn-font-size-xl: 30px;
+
+body {
+  color: $dn-color02;
+  font-family: $primary-font-name;
+  font-size: $dn-font-size-default !important;
+  font-weight: 200;
+}
+
+a:hover,
+a:focus {
+  color: darken($dn-color06, 20%);
+}

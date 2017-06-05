@@ -1,0 +1,28 @@
+{
+  "presets": ["es2015", "react", "stage-2"],
+  "plugins": [
+    "react-hot-loader/babel",
+    "transform-flow-strip-types",
+    [
+      "react-intl", {
+        "messagesDir": ".tmp/messages",
+        "enforceDescriptions": false
+      }
+    ]
+  ],
+  "env": {
+    "test": {
+       "presets": ["es2015", "react", "stage-2"],
+       "plugins": [
+         "react-hot-loader/babel",
+         "transform-flow-strip-types",
+         [
+           "react-intl", {
+             "messagesDir": ".tmp/messages",
+             "enforceDescriptions": false
+           }
+         ]
+       ],
+    }
+  }
+}

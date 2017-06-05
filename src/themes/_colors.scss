@@ -1,0 +1,41 @@
+/**
+ * Colors
+ */
+$color01: #FFFFFF; // white
+$color02: #333333; // black (dark grey)
+
+/**
+ * grey
+ */
+$color03: #f5f5f5; // extra light grey
+$color04: #dcdcdc; // light grey
+$color04-darken: darken($color04, 10); // light grey
+$color05: #999999; // medium grey
+$color06: #777777; // high grey
+
+/**
+ * blue
+ */
+$color07: #29B8CC; // blue
+
+/**
+* ~yellow
+*/
+$color08: #ebdcc7;
+
+/**
+ * red
+ */
+$color09: #FFB2B2;
+$color12: #E66454;
+
+/**
+ * green
+ */
+$color10: #98B198;
+$color13: #67CEA6;
+
+/**
+  * brown
+  */
+$color11: #C9C2C3;
