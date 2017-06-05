@@ -59,7 +59,7 @@ module.exports = () => ({
 
     path: resolve(__dirname, '../dist'),
 
-    publicPath: '/portal'
+    publicPath: '/'
     // necessary for HMR to know where to load the hot update chunks
   },
 
